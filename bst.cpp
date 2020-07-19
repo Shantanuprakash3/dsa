@@ -14,7 +14,7 @@ bool isValidtBSTUtil(treeNode* A, int min, int max){
 	if(A->val < min || A->val > max){
 		return false;
 	}
-	return isValidBSTUtil(A->left, min, A->val-1) && isValidBSTUtil(A->right, max, A->val);
+	return isValidBSTUtil(A->left, min, A->val-1) && isValidBSTUtil(A->right, max, A->val+1);
 }
 
 bool isValidBST(treeNode* A){
