@@ -3,7 +3,7 @@ public class LongestPalinSubstring{
 		System.out.println(str.substring(low,high+1));
 	}
 
-	static int longestPalinSubstr(String str){
+	static String longestPalinSubstr(String str){
 		int n = str.length();
 
 		boolean table[][] = newww boolean[n][n];
